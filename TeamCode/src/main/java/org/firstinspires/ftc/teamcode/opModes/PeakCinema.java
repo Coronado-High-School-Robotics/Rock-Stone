@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.OpModes;
+package org.firstinspires.ftc.teamcode.opModes;
 
 import com.acmerobotics.roadrunner.Action;
 import com.acmerobotics.roadrunner.InstantFunction;
@@ -16,7 +16,7 @@ import org.firstinspires.ftc.teamcode.MecanumDrive;
 @Autonomous(name = "Micheal")
 public class PeakCinema extends LinearOpMode {
     public class Pusher implements InstantFunction {
-        private Servo servo;
+        private final Servo servo;
         public Pusher() {
             servo = hardwareMap.get(Servo.class, "push");
             servo.setPosition(0);
